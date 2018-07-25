@@ -1,0 +1,52 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+span {
+    border: 1px;
+    border-style: solid;
+    margin: 25px;
+}
+
+/* .n-child section {
+    border: 1px;
+} */
+
+.n-child section:nth-of-type(even) {
+    border: 1px;
+    border-style: solid;
+}
+
+li:after {
+    content: ", ";
+}
+
+.n-type section:nth-of-type(odd) {
+   color: blue;
+}
+
+.first-of-type aside:first-of-type {
+    background-color: lime;
+}
+
+.first-of-type section:first-of-type {
+    background-color: purple;
+}
+
+.three section {
+    background-color: orange;
+}
+
+.three :first-child {
+    background-color: goldenrod;
+}
+
+.three :last-child {
+    background-color: darkslategray;
+}
